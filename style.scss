@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 756px;
+  margin: 0 auto;
+
+  height: auto;
+}
+
+.heading-box {
+  background-image: url("../images/page_logo.png");
+  height: 330px;
+  padding-top: 10%;
+  font-size: 13pt;
+
+  .heading-top {
+    margin-left: 8%;
+  }
+  .heading-bottom {
+    margin: 15.6% 0 0 7.5%;
+  }
+
+  h1 {
+    font-size: 24pt;
+    font-family: "Didact Gothic";
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5.5px;
+  }
+}
+
+.supcopy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19.01pt;
+  margin: 5% 10%;
+}
+.main-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1rf);
+  grid-template-rows: repeat(2, 1rf);
+  grid-gap: 20px;
+  padding: 4% 10%;
+
+  height: 802px;
+  border-radius: 2%;
+  background: #000;
+  grid-template-areas: "tleft tright" "bleft bright";
+
+  .main-box-item {
+    margin-top: 12.5%;
+    margin-left: 6%;
+    padding: 2%;
+    border-radius: 6%;
+    width: 241px;
+    height: 298px;
+    top: -23%;
+
+    .card-picture {
+      border: 1px solid orange;
+      border-radius: 12px;
+      margin: 5% 20% 5% 20%;
+      position: relative;
+      top: -19%;
+      height: 143px;
+      width: 143px;
+
+      img {
+        position: absolute;
+
+        &.imgSbuda {
+          height: 175px;
+          width: 154px;
+          top: -24%;
+          // left: -58px;
+        }
+        &.imgAmanda {
+          height: 171px;
+          width: 101px;
+          top: -21%;
+          margin-left: 14%;
+        }
+        &.imgNancy {
+          height: 197px;
+          width: 140px;
+          top: -39%;
+          // left: -1%;
+        }
+        &.imgPortia {
+          height: 194px;
+          width: 119px;
+          top: -37.6%;
+          margin-left: 5%;
+          // margin: 2%;
+        }
+      }
+    }
+    .card-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9.8pt;
+      padding: 0 30px;
+      // text-align:center;
+      margin-top: -26%;
+    }
+  }
+  .top-left {
+    grid-area: tleft;
+    background-color: #fff;
+  }
+  .top-right {
+    grid-area: tright;
+    background-color: #fff;
+  }
+
+  .bottom-left {
+    grid-area: bleft;
+    background-color: #fff;
+    margin-top: 18%;
+  }
+
+  .bottom-right {
+    grid-area: bright;
+    background-color: #fff;
+    margin-top: 18%;
+  }
+}
+.bottom-supcopy {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  &-top-text {
+    font-size: 18.01pt;
+    margin-top: 5%;
+    span {
+      font-size: 26.01pt;
+    }
+  }
+  &-bottom-text {
+      span {
+          background-color: orange;
+          padding: 1px 5px;
+      }
+  }
+}
+
+.footer {
+  background: white;
+  padding: 23px;
+  
+  &-text {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  &-top {
+    margin-left: 30%; 
+  }
+  a {
+    margin: 2% 1rem;
+    text-align: center;
+    font-size: 43px;
+    text-decoration: none;
+
+    
+    &.whatsapp-icon {
+      color: #27e03c;
+    }
+    &.instagram-icon {
+      background: -webkit-linear-gradient(
+        240deg,
+        #515bd4,
+        #8134af,
+        #dd2a7b,
+        #feda77,
+        #f58529 
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &.facebook-icon {
+      color: #0078ff;
+    }
+    &.email-icon {
+            background: linear-gradient(to bottom, #07689f, #08d9d6);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+  }
+
+  &-bottom {
+      margin: 3% 47%;
+  }
+}
